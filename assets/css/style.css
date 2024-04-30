@@ -1,0 +1,207 @@
+.ibm-plex-mono-thin {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-thin-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-extralight {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-extralight-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-light {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-light-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-regular-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-medium {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-medium-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-semibold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-semibold-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-bold {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-bold-italic {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
+
+body {
+padding: 0;
+margin: 0;
+display: grid;
+box-sizing: border-box;
+grid-template-columns: 250px auto;
+grid-template-rows: 10vh 80vh 10vh;
+grid-template-areas: 
+"header header header"
+"sidebar main main "
+"footer footer footer";
+height: 100vh;
+font-family: "IBM Plex Mono", monospace;
+
+}
+
+.header {
+background-color: black;
+grid-area: header;
+height: 10vh;
+background-image:url(../img/logo-the-office.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+text-align: center;
+
+
+}
+
+h1 {
+    color: white;
+    
+}
+
+
+
+.sidebar {
+background-color:  #43a4dc  ;
+grid-area: sidebar;
+height: 80vh;
+background-image: url(../img/worlds\ best\ boss.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: bottom;
+
+
+}
+
+.sidebar span {
+    color:white;
+}
+
+.span-office {
+    color: #d48736;
+}
+
+
+.main {
+display: grid;
+background-color:  #ebebeb ;
+grid-area: main;
+grid-template-columns: auto auto auto;
+overflow-y: scroll;
+gap: 20px;
+justify-items: center;
+align-items: center;
+height: 80vh;
+
+}
+
+.footer {
+background-color:  #d48736 ;
+grid-area: footer;
+height: 10vh;
+text-align: center;
+font-size: x-large;
+text-justify: center;
+padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+-moz-border-radius: 18px 18px 18px 18px;
+box-shadow: -1px 10px 23px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 23px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 23px 0px rgba(0,0,0,0.75);
+   
+   
+}
+
+.card img {
+    height: 250px;
+    object-fit: scale-down;
+ 
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color:  white;
+    background-color: #8ca0b7;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    border-radius: 0px 0px 15px 15px;
+-webkit-border-radius: 0px 0px 15px 15px;
+-moz-border-radius: 0px 0px 15px 15px;
+    
+}
